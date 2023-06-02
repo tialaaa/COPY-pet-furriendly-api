@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const knex = require('./knex');
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 443);
 
 app.use(cors());
 
