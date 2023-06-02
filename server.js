@@ -17,5 +17,5 @@ app.get('/api/v1/places', async (request, response) => {
 });
 
 app.listen(app.get('port'), () => {
-  console.log(`server has started on port 8080 - ${port}`);
+  console.log(`server has started on port 8080`);
 });
