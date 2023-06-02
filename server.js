@@ -5,7 +5,8 @@ const cors = require('cors');
 // const environment = process.env.NODE_ENV || 'production';
 const environment = 'production';
 const configuration = require('./knexfile')[environment];
-const knex = require('knex')(configuration);
+// const knex = require('knex')(configuration);
+const knex = require('knex')({client: 'pg'});
 
 app.set('port', process.env.PORT || 443);
 
