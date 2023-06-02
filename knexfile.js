@@ -16,7 +16,7 @@ module.exports = {
   // },
 
   development: {
-    client: 'postgres',
+    client: 'pg',
     connection: {
     // connectionString: process.env.DATABASE_URL,
     connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
@@ -34,26 +34,10 @@ module.exports = {
     migrations: {
       directory: './migrations'
     },
-    seeds: {
-      directory: './seeds'
-    },
+    // seeds: {
+    //   directory: './seeds'
+    // },
   },
-
-  // staging: {
-  //   client: 'postgresql',
-  //   connection: {
-  //     database: 'my_db',
-  //     user:     'username',
-  //     password: 'password'
-  //   },
-  //   pool: {
-  //     min: 2,
-  //     max: 10
-  //   },
-  //   migrations: {
-  //     tableName: 'knex_migrations'
-  //   }
-  // },
 
   production: {
     client: 'pg',
@@ -75,5 +59,21 @@ module.exports = {
       directory: './migrations'
     }
   }
+
+  // staging: {
+  //   client: 'postgresql',
+  //   connection: {
+  //     database: 'my_db',
+  //     user:     'username',
+  //     password: 'password'
+  //   },
+  //   pool: {
+  //     min: 2,
+  //     max: 10
+  //   },
+  //   migrations: {
+  //     tableName: 'knex_migrations'
+  //   }
+  // },
 
 };
