@@ -5,31 +5,31 @@
  */
 module.exports = {
 
-  development: {
-    client: 'pg',
-    connection: {
-      port: 5432,
-      database: 'pet_furriendly_db',
-      user:     'postgres',
-      password: 'Dinglebop22'
-    }
-  },
+  // development: {
+  //   client: 'pg',
+  //   connection: {
+  //     port: 5432,
+  //     database: 'pet_furriendly_db',
+  //     user:     'postgres',
+  //     password: 'Dinglebop22'
+  //   }
+  // },
 
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  },
+  // staging: {
+  //   client: 'postgresql',
+  //   connection: {
+  //     database: 'my_db',
+  //     user:     'username',
+  //     password: 'password'
+  //   },
+  //   pool: {
+  //     min: 2,
+  //     max: 10
+  //   },
+  //   migrations: {
+  //     tableName: 'knex_migrations'
+  //   }
+  // },
 
   production: {
     client: 'pg',
