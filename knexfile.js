@@ -35,7 +35,8 @@ module.exports = {
 
   // PROD WITH RENDER's CONNECTION STRING
   production: {
-    client: 'pg',
+    // client: 'pg',
+    client: process.env.CLIENT,
     connection: {
       connectionString: 'postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db',
       ssl: {
