@@ -35,7 +35,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
     // connectionString: process.env.DATABASE_URL,
-    connectionString: 'postgresql://postgres:Dinglebop22@localhost:5432/pet_furriendly_db',
+    connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
       ssl: {
         rejectUnauthorized: false
       },
