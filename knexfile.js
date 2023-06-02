@@ -15,11 +15,29 @@ module.exports = {
   //   }
   // },
 
-  // PROD WITH RENDER's CONNECTION STRING
+  // // DEV WITH RENDER's CONNECTION STRING - FOR TESTING
   development: {
     client: 'pg',
     connection: {
-    connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
+      connectionString: 'postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db',
+      ssl: {
+        rejectUnauthorized: false
+      },
+    },
+    // pool: {
+    //   min: 2,
+    //   max: 10
+    // },
+    migrations: {
+      directory: './migrations'
+    },
+  },
+
+  // PROD WITH RENDER's CONNECTION STRING
+  production: {
+    client: 'pg',
+    connection: {
+      connectionString: 'postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db',
       ssl: {
         rejectUnauthorized: false
       },
@@ -34,25 +52,11 @@ module.exports = {
   }
 };
 
+// Internal DB URL:
+// postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a/pet_furriendly_db
 
-  // // DEV WITH RENDER's CONNECTION STRING - FOR TESTING
-  // development: {
-  //   client: 'pg',
-  //   connection: {
-  //   connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
-  //     ssl: {
-  //       rejectUnauthorized: false
-  //     },
-  //   },
-  //   // pool: {
-  //   //   min: 2,
-  //   //   max: 10
-  //   // },
-  //   migrations: {
-  //     directory: './migrations'
-  //   },
-  // },
-
+// External DB URL:
+// postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db
 
   // staging: {
   //   client: 'postgresql',
