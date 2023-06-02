@@ -16,7 +16,7 @@ module.exports = {
   // },
 
   development: {
-    client: 'pg',
+    client: 'postgres',
     connection: {
     // connectionString: process.env.DATABASE_URL,
     connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
