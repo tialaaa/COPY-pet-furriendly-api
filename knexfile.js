@@ -1,8 +1,8 @@
 // Update with your config settings.
 
-/**
- * @type { Object.<string, import("knex").Knex.Config> }
- */
+// /**
+//  * @type { Object.<string, import("knex").Knex.Config> }
+//  */
 module.exports = {
 
   // development: {
@@ -53,7 +53,7 @@ module.exports = {
   // },
 
   production: {
-    client: 'postgres',
+    client: 'pg',
     connection: {
     // connectionString: process.env.DATABASE_URL,
     connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
