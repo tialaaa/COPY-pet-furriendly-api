@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const environment = process.env.NODE_ENV || 'production';
-const configuration = require('./knexfile')[environment];
-const knex = require('knex')(configuration);
+const knex = require('./knex');
+// const environment = process.env.NODE_ENV || 'production';
+// const configuration = require('./knexfile')[environment];
+// const knex = require('knex')(configuration);
 
 app.set('port', process.env.PORT || 443);
 
@@ -20,8 +21,8 @@ app.get('/api/v1/places', async (request, response) => {
 
 app.listen(app.get('port'), () => {
   console.log(`server has started on port 443`);
-  console.log('knex configuration', configuration);
-  console.log('node environment', environment)
+  // console.log('knex configuration', configuration);
+  // console.log('node environment', environment)
 });
 
 
