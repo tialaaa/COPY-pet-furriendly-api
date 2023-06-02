@@ -16,22 +16,22 @@ module.exports = {
   // },
 
   // // DEV WITH RENDER's CONNECTION STRING - FOR TESTING
-  development: {
-    client: 'pg',
-    connection: {
-      connectionString: 'postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db',
-      ssl: {
-        rejectUnauthorized: false
-      },
-    },
-    // pool: {
-    //   min: 2,
-    //   max: 10
-    // },
-    migrations: {
-      directory: './migrations'
-    },
-  },
+  // development: {
+  //   client: 'pg',
+  //   connection: {
+  //     connectionString: 'postgres://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a.oregon-postgres.render.com/pet_furriendly_db',
+  //     ssl: {
+  //       rejectUnauthorized: false
+  //     },
+  //   },
+  //   // pool: {
+  //   //   min: 2,
+  //   //   max: 10
+  //   // },
+  //   migrations: {
+  //     directory: './migrations'
+  //   },
+  // },
 
   // PROD WITH RENDER's CONNECTION STRING
   production: {
