@@ -22,4 +22,6 @@ app.get('/api/v1/places', async (request, response) => {
 app.listen(app.get('port'), () => {
 
   console.log(`server has started on port 443`);
+  console.log('knex configuration', configuration);
+  console.log('node environment', environment)
 });
