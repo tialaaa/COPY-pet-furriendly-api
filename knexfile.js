@@ -4,45 +4,21 @@
  * @type { Object.<string, import("knex").Knex.Config> }
  */
 module.exports = {
-
+  // DEV LOCAL
   // development: {
   //   client: 'pg',
   //   connection: {
   //     port: 5432,
   //     database: 'pet_furriendly_db',
   //     user:     'postgres',
-  //     password: 'Dinglebop22'
+  //     password: '~~~my password~~~' // UPDATE AS NEEDED
   //   }
   // },
 
-  // development: {
-  //   client: 'pg',
-  //   connection: {
-  //   // connectionString: process.env.DATABASE_URL,
-  //   connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
-  //     ssl: {
-  //       rejectUnauthorized: false
-  //     },
-  //   },
-  //   // pool: {
-  //   //   min: 2,
-  //   //   max: 10
-  //   // },
-  //   // migrations: {
-  //   //   tableName: 'knex_migrations'
-  //   // }
-  //   migrations: {
-  //     directory: './migrations'
-  //   },
-  //   // seeds: {
-  //   //   directory: './seeds'
-  //   // },
-  // },
-
-  production: {
+  // PROD WITH RENDER's CONNECTION STRING
+  development: {
     client: 'pg',
     connection: {
-    // connectionString: process.env.DATABASE_URL,
     connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
       ssl: {
         rejectUnauthorized: false
@@ -52,13 +28,31 @@ module.exports = {
     //   min: 2,
     //   max: 10
     // },
-    // migrations: {
-    //   tableName: 'knex_migrations'
-    // }
     migrations: {
       directory: './migrations'
     }
   }
+};
+
+
+  // // DEV WITH RENDER's CONNECTION STRING - FOR TESTING
+  // development: {
+  //   client: 'pg',
+  //   connection: {
+  //   connectionString: 'postgresql://postgres1:6VgF2qZGkAhiKpRmWC7nttNhKHpOPdb7@dpg-chslik2k728ud3k0vnig-a:5432/pet_furriendly_db',
+  //     ssl: {
+  //       rejectUnauthorized: false
+  //     },
+  //   },
+  //   // pool: {
+  //   //   min: 2,
+  //   //   max: 10
+  //   // },
+  //   migrations: {
+  //     directory: './migrations'
+  //   },
+  // },
+
 
   // staging: {
   //   client: 'postgresql',
@@ -75,5 +69,3 @@ module.exports = {
   //     tableName: 'knex_migrations'
   //   }
   // },
-
-};

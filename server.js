@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-// const knex = require('./knex');
-// const environment = process.env.NODE_ENV || 'production';
-const environment = 'production';
+const environment = process.env.NODE_ENV || 'production';
 const configuration = require('./knexfile')[environment];
 const knex = require('knex')(configuration);
-// const knex = require('knex')({client: 'pg'});
 
 app.set('port', process.env.PORT || 443);
 
@@ -26,3 +23,9 @@ app.listen(app.get('port'), () => {
   console.log('knex configuration', configuration);
   console.log('node environment', environment)
 });
+
+
+// ALSO TRIED USING THESE VARIATIONS - DID NOT FIX ERROR
+// const knex = require('./knex');
+// const environment = 'production';
+// const knex = require('knex')({client: 'pg'});
