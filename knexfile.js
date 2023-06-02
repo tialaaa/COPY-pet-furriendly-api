@@ -5,15 +5,15 @@
  */
 module.exports = {
 
-  development: {
-    client: 'pg',
-    connection: {
-      port: 5432,
-      database: 'pet_furriendly_db',
-      user:     'postgres',
-      password: 'Dinglebop22'
-    }
-  },
+  // development: {
+  //   client: 'pg',
+  //   connection: {
+  //     port: 5432,
+  //     database: 'pet_furriendly_db',
+  //     user:     'postgres',
+  //     password: 'Dinglebop22'
+  //   }
+  // },
 
   // development: {
   //   client: 'pg',
